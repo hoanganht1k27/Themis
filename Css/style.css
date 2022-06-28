@@ -1,0 +1,290 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+
+.nav{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: black;
+	color: white;
+	padding: 8px 20px;
+	z-index: 1000;
+}
+.navigation{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.user-wrapper{
+	display: inline-block;
+	float: right;
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+}
+.dropdown{
+	padding: 10px 20px;
+	background-color: #106b1075;
+	float: right;
+	display: none;
+	color: white;
+}
+.dropdown:hover{
+	background-color: green;
+}
+.dropdown-wrapper{
+	display: none;
+	background-color: #106b1075;
+	position: absolute;
+	right: 20px;
+	top: 52px;
+	list-style: none;
+}
+.dropdown-wrapper li a{
+	display: block;
+	width: 100%;
+	padding: 10px 20px;
+	color: white;
+}
+.dropdown-wrapper li a:hover{
+	background-color: green;
+}
+@media only screen and (max-width: 750px)
+{
+	.user-wrapper{
+		display: none;
+	}
+	.dropdown{
+		display: block;
+	}
+}
+@media only screen and (min-width: 750px)
+{
+	.dropdown-wrapper{
+		display: none!important;
+	}
+}
+.user-wrapper li a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #106b1075;
+    margin-left: 10px;
+    border-radius: 4px;
+    color: white;
+}
+.user-wrapper li a:hover{
+	background-color: green;
+}
+.user-wrapper li{
+	float: right;
+}
+.user-info{
+	display: inline-block;
+	float: right;
+}
+.user-info a{
+	display: inline-block;
+    padding: 10px 20px;
+    background-color: #106b1075;
+    float: left;
+    border-radius: 4px;
+    margin-right: 10px;
+    color: white;
+}
+.user-info a:hover{
+	background-color: green;
+}
+.user-info img{
+	width: 50px;
+	height: 44px;
+	float: left;
+	border-radius: 4px;
+	margin-right: 10px;
+}
+
+
+
+/*All page*/
+.page{
+	width: 100%;
+	padding-top: 75px;
+	background-color: #e2e2e2;
+	overflow: hidden;
+}
+.page-third{
+	width: 25%;
+	float: left;
+	padding: 20px;
+}
+@media only screen and (max-width: 750px)
+{
+	.page-third{
+		width: 100%;
+	}
+}
+.de-bai-list{
+	width: 100%;
+	list-style: none;
+	border: 1px solid grey;
+}
+.de-bai-list li a {
+	display: block;
+    width: 100%;
+    padding: 10px 20px;
+    color: black;
+    background-color: white;
+}
+.de-bai-list li a:hover{
+	background-color: grey;
+	color: white;
+}
+.de-bai-list li:not(last-child){
+	border-bottom: 1px solid grey;
+}
+/*Test*/
+ul.test-list {
+    list-style: none;
+    width: 100%;
+}
+
+.test-list .particular-test {
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.test-list .test {
+    list-style: none;
+    overflow: hidden;
+}
+.test li a{
+	display: block;
+	background-color: #42bd42;
+	padding: 10px;
+	color: white;
+	border-radius: 4px;
+}
+.test li a:hover{
+	background-color: green;
+}
+.test li{
+	display: inline-block;
+	float: left;
+	padding: 2px;
+}
+/*Nop bai*/
+.nop-bai{
+	width: 50%;
+	float: left;
+	padding: 20px;
+}
+.img-hacker img{
+	height: 500px;
+}
+@media only screen and (max-width: 750px)
+{
+	.nop-bai{
+		width: 100%;
+	}
+	.img-hacker img{
+		height: 300px;
+	}
+}
+#nop-bai{
+	width: 100%;
+	margin-top: 50px;
+	overflow: hidden;
+}
+#file{
+    border: 2px solid green;
+    width: 80%;
+    padding: 10px;
+    float: left;
+    background-color: white;
+}
+#submit{
+	width: 20%;
+	padding: 15px;
+	background-color: green;
+	color: white;
+	float: left;
+}
+#submit:hover{
+	background-color:#1c401c;
+}
+/*Nhat ky nop bai*/
+.log-list{
+	background-color: white;
+	border: 1px solid green;
+	list-style: none;
+}
+.log-list li{
+	position: relative;
+}
+.log-list li:not(last-child){
+	border-bottom: 1px solid green;
+}
+.log-list li a{
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+/*.log-list li span{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	padding: 5px;
+	color: white;
+}*/
+.log-list li .diem-container{
+	position: absolute;
+    display: inline-block;
+    right: 5px;
+    top: 5px;
+    background-color: white;
+    /* overflow: hidden; */
+    /* width: 55px; */
+    /* height: 34px; */
+    overflow: hidden;
+}
+.diem {
+    padding: 5px;
+    color: white;
+    float: left;
+    width: 55px;
+    text-align: center;
+}
+.so-lan-nop{
+	color: black;
+    font-size: 10px;
+    padding: 10px 5px;
+    display: block;
+    float: left;
+}
+#notice{
+	width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    color: red;
+    display: inline-block;
+    text-align: center;
+    padding: 0px;
+    vertical-align: middle;
+    font-size: 13px;
+    margin-left: 5px;
+}

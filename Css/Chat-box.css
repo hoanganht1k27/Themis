@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+.bg{
+	width: 100%;
+	height: 100%;
+	background-image: url('../image/background.jpg');
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: auto;
+}
+.chatbox-container {
+    margin: 100px auto;
+    width: 50%;
+    padding: 15px;
+    background-color: green;
+    overflow: hidden;
+}
+.header{
+	margin-bottom: 20px;
+}
+.header span {
+    color: white;
+}
+
+.header button {
+    float: right;
+    /* padding: 5px; */
+    background: transparent;
+    color: white;
+}
+#close i:hover{
+	color: red;
+}
+.chatbox-content{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: auto;
+    padding: 10px;
+    height: 500px;
+}
+.user-type-1{
+	padding: 3px; width: 70%; float: left;
+}
+.user-type-2{
+	padding: 3px; width: 70%; float: right;
+}
+.user-type-2 p i{
+    color: yellow;
+    font-size: 30px;
+}
+.user-type-1 p i{
+    color: yellow;
+    font-size: 30px;
+}
+.chatbox-input{
+	margin-top: 20px;
+}
+.msg{
+    overflow: hidden;
+    margin-bottom: 20px;
+    height: 63px;
+}
+#msg {
+    width: 90%;
+    border: 1px solid black;
+    /* border-radius: 5px; */
+    padding: 10px;
+    float: left;
+    overflow: auto;
+    height: 100%;
+}
+.msg button {
+    width: 10%;
+    padding: 7px 10px;
+    border: 1px solid #9E9E9E;
+    background-color: #cabdbd;
+    color: #031304;
+    font-size: 20px;
+    float: left;
+    height: 100%;
+}
+#submit{
+	margin: auto;
+    padding: 11px;
+    color: white;
+    background-color: #009688;
+    /* border: 1px solid grey; */
+    border-radius: 3px;
+}
+#submit:hover{
+	background-color: #09d2bf;
+}

@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trang chu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap_source/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="Css/animate.css">
+  <link rel="stylesheet" type="text/css" href="Css/style.css">
+  <link rel="stylesheet" type="text/css" href="Css/profile.css">
+</head>
+<body>
+    <!-- Navigation -->
+        <div class="nav">
+          <div class="navigation">
+            <ul class="user-wrapper">
+              <li>
+                <a href="logout.php">Exit</a>
+              </li>
+              <li>
+                <a href="#">Message</a>
+              </li>
+              <li>
+                <a href="#">Chat box</a>
+              </li>
+              <li>
+                <a href="index.php">Home</a>
+              </li>
+            </ul>
+            <button class="dropdown">
+              <i class="fas fa-caret-down"></i>
+            </button>
+            <div class="user-info">
+              <img src="image/img1.jpg">
+              <a href="#">hoanganht1k27</a>
+            </div>
+        </div>
+        <ul class="dropdown-wrapper">
+            <li>
+              <a href="#">Exit</a>
+            </li>
+            <li>
+              <a href="#">Message</a>
+            </li>
+            <li>
+              <a href="#">Chat box</a>
+            </li>
+          </ul>
+      </div>
+      <!-- Image hacker -->
+      <div class="img-hacker" style="position: relative;">
+        <img src="image/themis4.jpg" style="width: 100%; height: 500px;">
+        <i style="position: absolute; right: 0px; bottom: 0px; color: grey; padding: 20px;">The best way to know your future is creating it!!!</i>
+      </div>
+      <!-- Your profile -->
+      <div class="profile-container">
+        <h1>Welcome to your profile</h1>
+        <hr>
+        <div class="profile">
+          <div class="profile-left">
+            <div class="main-info" style="margin-bottom: 30px;">
+              <h4 style="color: blue;">Expert</h4>
+              <h3><a href="#" style="color: blue;">Anh Nguyen</a></h3>
+            </div>
+            <ul class="par-info">
+              <li>
+                <p id="fullname">Full name: Nguyễn Hoàng Anh</p>
+              </li>
+              <li>
+                <p id="class">From Class: 11T1</p>
+              </li>
+              <li>
+                <p id="email">Email: hoanganh8d@gmail.com</p>
+              </li>
+              <li>
+                <p id="facebook">Contact <a href="https://www.facebook.com/profile.php?id=100022791520615">Anh Nguyen</a></p>
+              </li>
+            </ul>
+          </div>
+          <div class="profile-right">
+            <div class="ava-container">
+              <img src="User/1/img1.jpg">
+              <hr>
+              <span style="display: block;text-align: center;" id="change-ava">Change your ava</span>
+              <div style="overflow: hidden;">
+                <form class="change-ava animate">
+                <input type="file" name="img-file">
+                <small style="margin-bottom: 15px;">Your can choose any one you want</small>
+                <br>
+                <input type="submit" name="submit" value="Upload" style="margin-top: 15px; padding: 5px;border: 1px solid grey;">
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script type="text/javascript" src="Js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap_source/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#change-ava").click(function(event) {
+          $(this).hide();
+          $('.change-ava').show();
+        });
+      });
+    </script>
+</body>
+</html>
